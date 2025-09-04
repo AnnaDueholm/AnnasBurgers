@@ -1,0 +1,149 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+head { 
+h1 {
+  font-size: 2.5em;
+}
+}
+
+
+
+body {
+  /*skrifttype*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /*skrift størelse*/
+  font-size: 1rem;
+  h1 {
+  font-size: 1.5rem; 
+
+}
+}
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+header{
+h1 {
+  color: lightpink
+}
+h1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+}
+
+
+h2 {
+  color: forestgreen;
+}
+
+p {
+  color: rgb(200, 58, 179);
+}
+
+/* Billeder i 100% */
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+#topNav {
+background-color: rgb(237, 118, 199);
+color: #fff;
+}
+
+#topNav a {
+  color: white;
+  width: 280px;
+}
+
+#topNav a:hover {
+  color:maroon
+
+}
+
+/* Hero sectionen styles */
+header {
+  height: 100vh;
+  background-color: palevioletred;
+
+  /* Herobilledet i baggrunden*/
+  background-image: url('../images/hero.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*læg teksten i midten vertikalt og horisontalt*/
+header {
+display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main {
+  background-color: lightpink;
+}
+
+footer{
+  background-color: lightgreen;
+}
+
+nav{
+  height: 3vh;
+}
+
+
+/*RESPONSIVT DESIGN*/
+
+/*Mobile enheder*/
+@media (max-width: 600px){
+  body {
+    background-color: skyblue;
+  }
+  #stemning {
+  display: block;
+  }
+}
+
+/*Tablets, iPads etc.*/
+/*Tablet (601 px */
+@media (min-width: 601px) and (max-width: 1024px) {
+body {
+    background-color: lightpink;
+  }
+  #stemning {
+  display: block;
+  }
+}
+
